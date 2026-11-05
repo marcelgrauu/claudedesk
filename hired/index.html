@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stop sending 300 CVs · The Claude Desk</title>
+<meta name="description" content="career-ops: a free, open source job search agent that runs in Claude Code. Made by the community, not Anthropic. You still press Submit.">
+<meta name="theme-color" content="#120F0D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Claude Desk">
+<meta property="og:title" content="Stop sending 300 CVs">
+<meta property="og:description" content="career-ops: a free, open source job search agent that runs in Claude Code. Made by the community, not Anthropic. You still press Submit.">
+<meta property="og:url" content="https://marcelgrauu.github.io/claudedesk/hired/">
+<meta property="og:image" content="https://marcelgrauu.github.io/claudedesk/hired/cover.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://marcelgrauu.github.io/claudedesk/hired/">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<style>
+:root{--bg:#120F0D;--card:#1A1613;--card2:#211C18;--well:#0B0908;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);--ink:#F4EFE8;--ink2:#D6CFC5;--mut:#9C948A;--or:#D97757;--deep:#C15F3C;--ok:#5FB37E;
+--sans:"Helvetica Neue",Helvetica,-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;--mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;--ease:cubic-bezier(.32,.72,0,1)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(70% 45% at 50% -8%,rgba(217,119,87,.22),transparent 70%),radial-gradient(60% 40% at 100% 100%,rgba(193,95,60,.10),transparent 70%)}
+a{color:inherit}
+code{font-family:var(--mono);font-size:.92em;background:rgba(217,119,87,.12);color:#F2B39A;padding:.08em .38em;border-radius:6px;overflow-wrap:anywhere}
+.nav{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(10px + env(safe-area-inset-top)) 16px 10px;background:rgba(18,15,13,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:-.01em;font-size:16px;white-space:nowrap}
+.brand img{width:34px;height:34px;border-radius:10px;display:block;box-shadow:0 0 0 1px var(--line2)}
+.you{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink2);border:1px solid rgba(217,119,87,.45);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.you b{color:var(--or)}
+main{max-width:680px;margin:0 auto;padding:0 16px calc(40px + env(safe-area-inset-bottom))}
+.hero{display:flex;gap:18px;align-items:flex-start;padding:30px 0 6px}
+.thumb{width:92px;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:14px;flex:none;box-shadow:0 0 0 1px var(--line2),0 18px 40px rgba(0,0,0,.45)}
+.kicker{margin:0 0 8px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--or)}
+h1{margin:0;font-size:clamp(30px,8.2vw,50px);line-height:1.02;letter-spacing:-.035em;font-weight:800;text-wrap:balance}
+.lede{margin:12px 0 0;color:var(--ink2);font-size:17px}
+.blk{margin-top:30px}
+h2{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--or);flex:none}
+ol,ul{list-style:none;margin:0;padding:0}
+.steps,.cards{display:grid;gap:10px}
+.step,.card{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px}
+.card{flex-direction:column;gap:10px}
+.ih{display:flex;align-items:center;gap:8px;flex:none;align-self:flex-start}
+.ib{min-width:0;flex:1}
+.num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--or);color:#fff;font-family:var(--mono);font-weight:700;font-size:14px}
+.tag{display:inline-flex;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--or);background:rgba(217,119,87,.12);border-radius:999px;padding:5px 11px}
+h3{margin:0 0 4px;font-size:19px;line-height:1.2;letter-spacing:-.015em}
+.ib p{margin:0;color:var(--ink2)}
+.ib p+p,.ib p+.copy,.ib p+.cmd,.ib h3+.copy,.ib .cmd+.cmd,.ib .copy+.lnks,.ib .cmd+.lnks,.ib p+.lnks{margin-top:10px}
+.fix{display:flex;gap:10px;align-items:baseline;margin-top:10px!important;color:var(--ink)!important;font-weight:600}
+.fix span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--ok);border-radius:6px;padding:2px 7px;flex:none}
+.copy{position:relative;background:var(--well);border:1px solid var(--line2);border-radius:14px;padding:14px 14px 56px}
+.copy pre{margin:0;font-family:var(--mono);font-size:14px;line-height:1.55;color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere}
+.copy .btn{position:absolute;right:10px;bottom:10px}
+.lab{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.cmd{display:flex;align-items:center;gap:10px;background:var(--well);border:1px solid var(--line2);border-radius:14px;padding:8px 8px 8px 14px}
+.cmd code{flex:1;min-width:0;background:none;padding:0;color:var(--ink);font-size:14px;white-space:pre-wrap}
+.btn{appearance:none;border:0;cursor:pointer;font:700 14px/1 var(--sans);color:#fff;background:var(--or);border-radius:999px;padding:11px 18px;min-height:40px;transition:transform .3s var(--ease),background .3s var(--ease);flex:none}
+.btn:active{transform:scale(.95)}
+.btn.sm{padding:9px 14px;min-height:36px;font-size:13px}
+.btn.ok{background:var(--ok)}
+.lnks{display:flex;flex-wrap:wrap;gap:8px}
+.chip-link{display:inline-flex;gap:6px;align-items:center;text-decoration:none;font-size:14px;font-weight:600;border:1px solid var(--line2);border-radius:999px;padding:8px 14px}
+.tips{display:grid;gap:8px}
+.tips li{position:relative;padding:12px 14px 12px 36px;background:var(--card);border:1px solid var(--line);border-radius:16px;color:var(--ink2)}
+.tips li::before{content:"";position:absolute;left:15px;top:20px;width:7px;height:7px;border-radius:50%;background:var(--or)}
+.links{display:grid;gap:8px}
+.link{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;font-weight:600;background:var(--card2);border:1px solid var(--line2);border-radius:16px;padding:15px 16px;transition:border-color .3s var(--ease)}
+.link:hover,.chip-link:hover{border-color:rgba(217,119,87,.6)}
+.arr{color:var(--or);font-weight:700}
+.index{display:grid;gap:8px}
+.row{display:flex;align-items:center;gap:14px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px 14px 10px 10px}
+.row img,.noimg{width:54px;height:72px;border-radius:10px;object-fit:cover;flex:none;background:var(--card2)}
+.rt{display:flex;flex-direction:column;min-width:0;flex:1}
+.kw{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--or)}
+.ttl{font-weight:700;line-height:1.25}
+.src{margin:28px 0 0;font-size:13px;color:var(--mut)}
+footer{max-width:680px;margin:0 auto;padding:22px 16px calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--line);font-size:13px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between}
+footer a{color:var(--ink2);text-decoration:none}
+@media (min-width:640px){.thumb{width:120px}.hero{gap:24px;padding-top:44px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav"><a class="brand" href="../"><img src="../assets/logo.png" width="34" height="34" alt="The Claude Desk logo"><span>The Claude Desk</span></a><span class="you">You commented <b>HIRED</b></span></header>
+<main>
+<section class="hero has-thumb"><img class="thumb" src="cover.jpg" width="120" height="160" alt="Video cover"><div><p class="kicker">Video 17 · Job hunting</p><h1>Stop sending 300 CVs</h1><p class="lede">career-ops: a free, open source job search agent that runs in Claude Code. Made by the community, not Anthropic. You still press Submit.</p></div></section><section class="blk"><h2><span class="dot"></span>Install it</h2><ol class="steps"><li class="step"><div class="ih"><span class="num">1</span></div><div class="ib"><p>Fastest way, in your terminal. Needs Node.js.</p><div class="cmd"><code>npx @santifer/career-ops init</code><button type="button" class="btn sm" data-copy>Copy</button></div><div class="cmd"><code>cd career-ops</code><button type="button" class="btn sm" data-copy>Copy</button></div><div class="cmd"><code>claude</code><button type="button" class="btn sm" data-copy>Copy</button></div></div></li><li class="step"><div class="ih"><span class="num">2</span></div><div class="ib"><p>Or as a Claude Code plugin, from any folder. Then start a new session.</p><div class="cmd"><code>/plugin marketplace add career-ops-hq/career-ops</code><button type="button" class="btn sm" data-copy>Copy</button></div><div class="cmd"><code>/plugin install career-ops@career-ops</code><button type="button" class="btn sm" data-copy>Copy</button></div></div></li><li class="step"><div class="ih"><span class="num">3</span></div><div class="ib"><p>On first launch it asks for your CV, what you want and what you refuse. Just chat.</p></div></li></ol></section><section class="blk"><h2><span class="dot"></span>Your first 3 prompts</h2><ol class="cards"><li class="card"><div class="ih"><span class="num">1</span></div><div class="ib"><h3>Give it your CV</h3><p>Paste the text of your CV right after this line.</p><div class="copy"><span class="lab">Prompt</span><pre>Update my profile with this CV I&#x27;m pasting</pre><button type="button" class="btn" data-copy>Copy</button></div></div></li><li class="card"><div class="ih"><span class="num">2</span></div><div class="ib"><h3>Check one job</h3><p>It checks the job is still open, scores it from 1 to 5 against your CV, and tailors your CV if it fits. Put your real job link.</p><div class="copy"><span class="lab">Prompt</span><pre>Evaluate this JD with career-ops auto-pipeline: https://company.com/jobs/123</pre><button type="button" class="btn" data-copy>Copy</button></div></div></li><li class="card"><div class="ih"><span class="num">3</span></div><div class="ib"><h3>Find new jobs</h3><p>Scans the company career pages in your list for new postings.</p><div class="cmd"><code>/career-ops scan</code><button type="button" class="btn sm" data-copy>Copy</button></div></div></li></ol></section><section class="blk"><h2><span class="dot"></span>Good to know</h2><ul class="tips"><li>Below 4 out of 5 it tells you not to apply. You can override it.</li><li>It drafts and fills, but never presses Submit or sends an email. Read every CV before you send it.</li><li>On Claude Pro or Max, check that <code>ANTHROPIC_API_KEY</code> is not set, or it bills the API instead of your plan.</li></ul></section><section class="blk"><h2><span class="dot"></span>Links</h2><div class="links"><a class="link" href="https://github.com/career-ops-hq/career-ops" target="_blank" rel="noopener"><span>career-ops on GitHub</span><span class="arr" aria-hidden="true">↗</span></a><a class="link" href="https://github.com/career-ops-hq/career-ops/blob/main/docs/CLAUDE_PLUGIN.md" target="_blank" rel="noopener"><span>Claude Code plugin guide</span><span class="arr" aria-hidden="true">↗</span></a><a class="link" href="https://santifer.io/career-ops-system" target="_blank" rel="noopener"><span>The author&#x27;s story</span><span class="arr" aria-hidden="true">↗</span></a></div></section><p class="src">The career-ops README and docs on GitHub, checked Nov 5, 2026.</p>
+</main>
+<footer><span>Independent channel, not affiliated with Anthropic.</span><a href="../">All pages →</a></footer>
+<script>
+(function(){
+  function done(b){b.textContent="Copied";b.classList.add("ok");setTimeout(function(){b.textContent="Copy";b.classList.remove("ok")},1600)}
+  function fallback(t,b){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy")}catch(e){}document.body.removeChild(a);done(b)}
+  document.addEventListener("click",function(e){
+    var b=e.target.closest("[data-copy]");if(!b)return;
+    var src=b.parentElement.querySelector("pre,code");var t=src?src.textContent:"";
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(function(){done(b)},function(){fallback(t,b)})}else{fallback(t,b)}
+  });
+})();
+</script>
+</body>
+</html>

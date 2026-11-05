@@ -88,5 +88,41 @@
   "kw": "CONNECT",
   "slug": "connect",
   "title": "5 connectors that give Claude eyes and hands"
+ },
+ {
+  "nn": "17",
+  "kw": "HIRED",
+  "slug": "hired",
+  "title": "Stop sending 300 CVs"
+ },
+ {
+  "nn": "18",
+  "kw": "RECALL",
+  "slug": "recall",
+  "title": "Make Claude Code remember your project"
+ },
+ {
+  "nn": "19",
+  "kw": "UNDO",
+  "slug": "undo",
+  "title": "Undo what Claude Code broke"
+ },
+ {
+  "nn": "20",
+  "kw": "LEAN",
+  "slug": "lean",
+  "title": "Use less Claude, get more done"
+ },
+ {
+  "nn": "21",
+  "kw": "SHORTS",
+  "slug": "shorts",
+  "title": "Make animated shorts with Claude"
+ },
+ {
+  "nn": "22",
+  "kw": "MIRROR",
+  "slug": "mirror",
+  "title": "Ask Claude what it figured out about you"
  }
 ]
