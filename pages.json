@@ -124,5 +124,47 @@
   "kw": "MIRROR",
   "slug": "mirror",
   "title": "Ask Claude what it figured out about you"
+ },
+ {
+  "nn": "23",
+  "kw": "INTERVIEW",
+  "slug": "interview",
+  "title": "Let Claude interview you first"
+ },
+ {
+  "nn": "24",
+  "kw": "HUMAN",
+  "slug": "human",
+  "title": "Make Claude stop sounding like a robot"
+ },
+ {
+  "nn": "25",
+  "kw": "PROOF",
+  "slug": "proof",
+  "title": "Make Claude show its receipts"
+ },
+ {
+  "nn": "26",
+  "kw": "DIARY",
+  "slug": "diary",
+  "title": "Make Claude remember who you are"
+ },
+ {
+  "nn": "27",
+  "kw": "EXPERTS",
+  "slug": "experts",
+  "title": "Put 3 experts in one chat"
+ },
+ {
+  "nn": "28",
+  "kw": "SCALPEL",
+  "slug": "scalpel",
+  "title": "Give Claude a scalpel"
+ },
+ {
+  "nn": "29",
+  "kw": "VOICE",
+  "slug": "voice",
+  "title": "Make Claude write like you"
  }
 ]
