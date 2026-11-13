@@ -166,5 +166,29 @@
   "kw": "VOICE",
   "slug": "voice",
   "title": "Make Claude write like you"
+ },
+ {
+  "nn": "32",
+  "kw": "CLEAN",
+  "slug": "clean",
+  "title": "Let Claude clean your Downloads"
+ },
+ {
+  "nn": "30",
+  "kw": "ADS",
+  "slug": "ads",
+  "title": "Turn off the ads in Windows 11"
+ },
+ {
+  "nn": "31",
+  "kw": "SETUP",
+  "slug": "setup",
+  "title": "Your day one Claude checklist"
+ },
+ {
+  "nn": "35",
+  "kw": "STUDY",
+  "slug": "study",
+  "title": "Make Claude quiz you"
  }
 ]
