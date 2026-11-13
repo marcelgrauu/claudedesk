@@ -190,5 +190,17 @@
   "kw": "STUDY",
   "slug": "study",
   "title": "Make Claude quiz you"
+ },
+ {
+  "nn": "33",
+  "kw": "APP",
+  "slug": "app",
+  "title": "Build your own app with Claude"
+ },
+ {
+  "nn": "34",
+  "kw": "FAST",
+  "slug": "fast",
+  "title": "Find out why your laptop is slow"
  }
 ]
