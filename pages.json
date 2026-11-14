@@ -214,5 +214,11 @@
   "kw": "PRINTER",
   "slug": "printer",
   "title": "Fix a printer that won't print"
+ },
+ {
+  "nn": "38",
+  "kw": "EXCEL",
+  "slug": "excel",
+  "title": "Get any Excel formula without learning it"
  }
 ]
