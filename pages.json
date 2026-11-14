@@ -208,5 +208,11 @@
   "kw": "WIFI",
   "slug": "wifi",
   "title": "Find out why your Wi-Fi is slow"
+ },
+ {
+  "nn": "37",
+  "kw": "PRINTER",
+  "slug": "printer",
+  "title": "Fix a printer that won't print"
  }
 ]
