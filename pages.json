@@ -244,5 +244,11 @@
   "kw": "EMAIL",
   "slug": "email",
   "title": "Write the email you keep avoiding"
+ },
+ {
+  "nn": "43",
+  "kw": "PDF",
+  "slug": "pdf",
+  "title": "Fix your PDFs without uploading them"
  }
 ]
