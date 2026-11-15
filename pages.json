@@ -238,5 +238,11 @@
   "kw": "RECEIPTS",
   "slug": "receipts",
   "title": "Turn your receipts into a spreadsheet"
+ },
+ {
+  "nn": "42",
+  "kw": "EMAIL",
+  "slug": "email",
+  "title": "Write the email you keep avoiding"
  }
 ]
