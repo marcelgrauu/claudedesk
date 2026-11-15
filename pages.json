@@ -232,5 +232,11 @@
   "kw": "BATTERY",
   "slug": "battery",
   "title": "Find out why your battery dies so fast"
+ },
+ {
+  "nn": "41",
+  "kw": "RECEIPTS",
+  "slug": "receipts",
+  "title": "Turn your receipts into a spreadsheet"
  }
 ]
