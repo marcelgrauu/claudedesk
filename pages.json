@@ -226,5 +226,11 @@
   "kw": "PHOTOS",
   "slug": "photos",
   "title": "Edit 500 photos with one prompt"
+ },
+ {
+  "nn": "40",
+  "kw": "BATTERY",
+  "slug": "battery",
+  "title": "Find out why your battery dies so fast"
  }
 ]
